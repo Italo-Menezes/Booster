@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules src/index.ts",
+    "start": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules src/server.ts",
     "build": "tsc",
     "add-build": "git add dist",
     "ts.check": "tsc --noEmit"
