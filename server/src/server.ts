@@ -3,15 +3,15 @@ import { sequelize } from "./database/sequelize";
 import routes from "./routes";
 import cors from "cors";
 import dotenv from "dotenv";
+dotenv.config();
+const port = process.env.PORT || 3333;
 
 import path from "path";
 const app = express();
 app.use(cors());
-const port = process.env.PORT || 3333;
 
 /* config */
 app.use(express.json());
-dotenv.config();
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.resolve(__dirname, "..", "uploads")));
 
