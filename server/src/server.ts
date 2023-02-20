@@ -2,14 +2,16 @@ import express from "express";
 import { sequelize } from "./database/sequelize";
 import routes from "./routes";
 import cors from "cors";
+import dotenv from "dotenv";
 
 import path from "path";
 const app = express();
 app.use(cors());
-const port = 3333;
+const port = process.env.PORT || 3333;
 
 /* config */
 app.use(express.json());
+dotenv.config();
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.resolve(__dirname, "..", "uploads")));
 

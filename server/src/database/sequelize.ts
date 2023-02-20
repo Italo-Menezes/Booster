@@ -1,12 +1,14 @@
-
-
 import { Sequelize } from "sequelize";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 
 export const sequelize = new Sequelize ( {
-  username: "root",
-  password: '',
+  username: "admin",
+  password: process.env.SENHA_BANCO_DE_DADOS,
   database: "booster",
-  host: "localhost",
+  host: process.env.CONECTAR_BANCO_DE_DADOS,
   dialect: "mysql",
   define: {
     underscored: true
@@ -15,4 +17,3 @@ export const sequelize = new Sequelize ( {
 
 
 
-/* veficar se o banco está conectado com  */
