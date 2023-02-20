@@ -16,8 +16,8 @@
   "production": {
     "username": "admin",
     "password": "italosma",
-    "database": "web.cin8xcnaucfb.sa-east-1.rds.amazonaws.com",
-    "host": "127.0.0.1",
+    "database": "booster",
+    "host": "web.cin8xcnaucfb.sa-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
