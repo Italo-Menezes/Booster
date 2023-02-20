@@ -1,5 +1,5 @@
 /* conveter para o module es */
-const path = require("path");
+
 
 module.exports = {
   config: path.resolve("config", "sequelizeCli.json"),
