@@ -6,9 +6,9 @@ dotenv.config();
 
 export const sequelize = new Sequelize ( {
   username: "admin",
-  password: process.env.SENHA_BANCO_DE_DADOS,
+  password: 'italosma',
   database: "booster",
-  host: process.env.CONECTAR_BANCO_DE_DADOS,
+  host:'web.cin8xcnaucfb.sa-east-1.rds.amazonaws.com',
   dialect: "mysql",
   define: {
     underscored: true
